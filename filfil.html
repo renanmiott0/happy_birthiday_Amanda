@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Com todo meu amor para a minha vida!!! ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff0f5;
+      color: #444;
+    }
+
+ /* ===== SLIDER ===== */
+.slider {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background: #000;
+}
+
+.slides img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  max-width: 100%;
+  max-height: 100%;
+
+  width: auto;
+  height: auto;
+
+  transform: translate(-50%, -50%);
+
+  object-fit: contain;
+
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.slides img.active {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.25);
+}
+
+.texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 2;
+  width: 90%;
+}
+
+.texto h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+}
+
+.texto p {
+  font-size: clamp(1rem, 2vw, 1.4rem);
+}
+    /* ===== DOTS ===== */
+    .dots {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+      z-index: 3;
+    }
+
+    .dots span {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin: 5px;
+      background: rgba(255,255,255,0.5);
+      border-radius: 50%;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .dots span.active {
+      background: #ff6f91;
+      transform: scale(1.3);
+    }
+
+    /* ===== TIMELINE ===== */
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background: #ff6f91;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .container {
+      padding: 20px;
+      position: relative;
+      width: 50%;
+    }
+
+    .left { left: 0; }
+    .right { left: 50%; }
+
+    .content {
+      background: white;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .content img {
+      width: 100%;
+      border-radius: 12px;
+      margin-top: 10px;
+    }
+
+    h2 {
+      margin: 0;
+      color: #ff6f91;
+    }
+
+    /* ===== FINAL ===== */
+    .final {
+      text-align: center;
+      padding: 50px 20px;
+      background: #ffe4ec;
+    }
+
+    .final h2 {
+      font-size: 2rem;
+    }
+
+    .final p {
+      max-width: 500px;
+      margin: auto;
+      font-size: 1.1rem;
+    }
+
+    /* ===== MOBILE ===== */
+    @media screen and (max-width: 768px) {
+      .container {
+        width: 100%;
+        left: 0 !important;
+      }
+
+      .timeline::after {
+        left: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ===== SLIDER ===== -->
+<header class="slider">
+
+  <div class="slides">
+    <img src="BASE/FOTO3.JPG" class="active">
+    <img src="BASE/FOTO4.JPG">
+    <img src="BASE/FOTO5.JPG">
+    <img src="BASE/FOTO6.JPG">
+    <img src="BASE/FOTO7.JPG">
+  </div>
+
+  <div class="overlay"></div>
+
+  <div class="texto">
+    <h1>Feliz Aniversário, Amor da minha vida  ❤️</h1>
+    <p>Desde o começo, você mudou tudo...</p>
+  </div>
+
+  <div class="dots"></div>
+
+</header>
+
+<!-- ===== TIMELINE ===== -->
+<section class="timeline">
+
+  <div class="container left">
+    <div class="content">
+      <h2>13 de Junho de 2022</h2>
+      <p>Aqui foi onde tudo começou quando nesse mesmo dia eu estava na academia e voce me curtiu kkkk
+        naquele dia eu parei tudo oque eu estava fazendo para conversar com uma pessoinha que eu mal sabia que seria o amor da minha vida 
+         ❤️</p>
+    </div>
+  </div>
+
+  <div class="container right">
+    <div class="content">
+      <h2> 18 de Junho de 2022</h2>
+      <p>NOSSO PRIMEIRO ENCONTRO<br>
+    nesse dia eu tive um econtro com a menina mais linda da minha vida<br>
+    quando cheguei naquele shopping, eu vi o sorisso mais lindo da minha vida <br>
+    e nossa que sorriso em... ,desse dia em diante cada dia que passava eu me apaixonava mais por ele...   </p>
+      <img src="Base/inicio.jpeg">
+    </div>
+  </div>
+
+  <div class="container left">
+    <div class="content">
+      <h2>08 de JUNHO DE 2022</h2>
+      <p>Nesse dia eu fiz uma das melhores escolhas da minha vida,eu CASEI COM A MULHER MAIS MARAVILHOSA<br>
+        DA MINHA VIDA.
+        sou tão apaixonado por ela, nós tivemos tantos arranca rabos ate hoje e olha so onde nos estamos kkk ✨</p>
+      <img src="Base/foto1.JPG">
+    </div>
+  </div>
+<div class="container right">
+    <div class="content">
+      <h2>08 de Junho de 2024</h2>
+     <h2>08 de Junho de 2024</h2>
+      <p>Nesse dia eu ganhei uma das maiores benção da minha vida,<br>
+        nesse dia eu casei perante  Deus com voce minha vida, e obrigado<br>
+        por voce me permitir isso meu amor, eu amo demais voce amor .</p>
+      <img src="bASE/FOTO2.JPG">
+    </div>
+  </div>
+</section>
+
+<!-- ===== FINAL ===== -->
+<section class="final">
+  <h2>Você é tudo pra mim 💖</h2>
+  <p>
+    Amanda, obrigado por existir na minha vida.  
+    Cada momento com você é especial.  
+    Este ano ressolvi fazer algo diferente eu espero que voce<br>
+    realmente goste amor kkkk
+    Eu te amo mais do que palavras conseguem dizer meu amor .  
+    Feliz aniversário ❤️
+  </p>
+</section>
+
+<!-- ===== SCRIPT ===== -->
+<script>
+let slides = document.querySelectorAll(".slides img");
+let dotsContainer = document.querySelector(".dots");
+let index = 0;
+
+// criar dots
+slides.forEach((_, i) => {
+  let dot = document.createElement("span");
+  if(i === 0) dot.classList.add("active");
+
+  dot.addEventListener("click", () => {
+    slides[index].classList.remove("active");
+    dots[index].classList.remove("active");
+
+    index = i;
+
+    slides[index].classList.add("active");
+    dots[index].classList.add("active");
+  });
+
+  dotsContainer.appendChild(dot);
+});
+
+let dots = document.querySelectorAll(".dots span");
+
+// auto slide
+setInterval(() => {
+  slides[index].classList.remove("active");
+  dots[index].classList.remove("active");
+
+  index = (index + 1) % slides.length;
+
+  slides[index].classList.add("active");
+  dots[index].classList.add("active");
+}, 3000);
+</script>
+
+</body>
+</html>
